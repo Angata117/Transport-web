@@ -11,11 +11,11 @@ const Nav = () => {
     return (
         <header className="py-8 z-10 w-full">
             <nav className="flex items-center  justify-between py-2">
-                <div className="flex justify-between items-center w-full md:w-auto gap-[200px] ">
-                    <a href="#" className="lg:ml-auto lg:mr-10">
+                <div className="flex justify-between items-center w-full gap-[100px]">
+                    <a href="#" className="flex-1 justify-start">
                         <span className=" text-custom-blue font-semibold text-3xl tracking-tight">Website</span>
                     </a>
-                    <button onClick={toggleMenu} className="lg:hidden transition-transform">
+                    <button onClick={toggleMenu} className="lg:hidden  justify-end transition-transform">
                         {isOpen ? <img src="closeIcon.png" alt="" width={25} height={25} /> : <img src="hamburger.svg" width={25} height={25} />}
                     </button>
                 </div>
@@ -29,7 +29,7 @@ const Nav = () => {
                         ))}
                     </ul>
                 )} */}
-
+                
                 <ul className="flex-1 flex justify-center items-center px-9 gap-2 max-lg:hidden p-5 text-nav-color cursor-pointer text-[16px]">
                     {navLinks.map((link) => (
                         <li key={link.label} className="py-3 px-4 hover:underline">
