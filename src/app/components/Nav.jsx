@@ -11,7 +11,7 @@ const Nav = () => {
     return (
         <header className="py-8 z-10 w-full">
             <nav className="flex items-center  justify-between py-2">
-                <div className="flex justify-between items-center w-full gap-[100px]">
+                <div className="flex justify-between items-center w-full md:w-auto gap-[100px]">
                     <a href="#" className="flex-1 justify-start">
                         <span className=" text-custom-blue font-semibold text-3xl tracking-tight">Website</span>
                     </a>
